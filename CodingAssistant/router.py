@@ -7,7 +7,7 @@ from langchain.llms import Clarifai
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 
-from CodingAssisstant import app
+from CodingAssistant import app
 
 class Generate(BaseModel):
     text:str
