@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from .ConfigEnv import config
+from .env_config import config
 from fastapi.middleware.cors import CORSMiddleware
 
 from langchain.llms import Clarifai
