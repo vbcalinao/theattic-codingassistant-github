@@ -46,7 +46,7 @@ app.add_middleware(
 
 @app.get("/", tags=["Home"])
 def api_home():
-    return {'detail': 'Welcome!'}
+    return {'detail': 'Welcome! This is your Coding Assistant. If you are in the Hugging Face interface, please go to the direct link, https://vbcalinao-theattic-clm-codingassistant.hf.space/docs and try out /api/generate!'}
 
 @app.post("/api/generate", summary="Generate text from prompt", tags=["Generate"], response_model=Generate)
 def inference(input_prompt: str):
